@@ -1,6 +1,4 @@
 node_modules/
-npm-debug.log
-.DS_Store
-dist/
-build/
-tmp/
+coverage/
+.nyc_output/
+package-lock.json
