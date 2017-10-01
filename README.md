@@ -2,8 +2,6 @@
 Telegram Cli for Nodejs. A nodejs package for the [`telegram-bot`](https://valtman.name/telegram-bot).
 Support Secret Chats
 
-## How to Use
-
 ## The Functions
 `node-telegram-cli` is a Work In Progress. This commit is based on [telegram-bot-170901.tl](https://valtman.name/files/telegram-bot-170901-nightly.tl) scheme.
 Here is a list of functions that's should works.
