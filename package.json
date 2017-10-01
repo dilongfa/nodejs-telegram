@@ -1,0 +1,29 @@
+{
+  "name": "telegram-cli",
+  "version": "1.0.0",
+  "description": "Telegram Cli in Nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test --es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longfanos/node-telegram-cli.git"
+  },
+  "keywords": [
+    "telegram",
+    "telegram-api",
+    "telegram-cli",
+    "telegram-bot",
+    "telegram-mtproto",
+    "telegraf",
+    "tele",
+    "mtproto"
+  ],
+  "author": "Pham Dinh Long",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/longfanos/node-telegram-cli/issues"
+  },
+  "homepage": "https://github.com/longfanos/node-telegram-cli#readme"
+}
