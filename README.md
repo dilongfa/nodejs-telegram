@@ -3,7 +3,7 @@ Telegram Cli in Nodejs. A nodejs package for the [`telegram-bot`](https://valtma
 Support Secret Chats
 
 ## The Functions
-`node-telegram-cli` is a Work In Progress. This commit is based on [telegram-bot-170901.tl](https://valtman.name/files/telegram-bot-170901-nightly.tl) scheme.
+`node-telegram-cli` is a Work In Progress. This commit is based on [telegram-bot-170831.tl](https://valtman.name/files/telegram-bot-170831.tl) scheme.
 Here is a list of functions that's should works.
 
 - [x] getAuthState
