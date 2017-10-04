@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/longfanos/node-telegram/issues"
   },
-  "homepage": "https://github.com/longfanos/node-telegram#readme"
+  "homepage": "https://github.com/longfanos/node-telegram#readme",
+  "dependencies": {
+    "debug": "^3.1.0"
+  }
 }
