@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/longfanos/node-telegram.git"
+    "url": "git+https://github.com/dilongfa/nodejs-telegram.git"
   },
   "keywords": [
     "telegram",
@@ -23,9 +23,9 @@
   "author": "Pham Dinh Long",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/longfanos/node-telegram/issues"
+    "url": "https://github.com/dilongfa/nodejs-telegram/issues"
   },
-  "homepage": "https://github.com/longfanos/node-telegram#readme",
+  "homepage": "https://github.com/dilongfa/nodejs-telegram#readme",
   "dependencies": {
     "debug": "^3.1.0"
   }
