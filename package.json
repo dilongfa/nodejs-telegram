@@ -4,7 +4,7 @@
   "description": "Telegram Cli in Nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "node test --es6"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
