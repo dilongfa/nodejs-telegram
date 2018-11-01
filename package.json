@@ -1,10 +1,19 @@
 {
-  "name": "telegram-cli",
+  "name": "nodejs-telegram",
   "version": "1.0.0",
   "description": "Telegram Cli in Nodejs",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ],
+    "dryRun": true,
+    "ci": false
   },
   "repository": {
     "type": "git",
@@ -28,5 +37,8 @@
   "homepage": "https://github.com/dilongfa/nodejs-telegram#readme",
   "dependencies": {
     "debug": "^3.1.0"
+  },
+  "devDependencies": {
+    "semantic-release": "15.10.6"
   }
 }
