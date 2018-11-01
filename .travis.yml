@@ -1,5 +1,7 @@
 language: node_js
-node_js:
-  - "8"
-env:
-    - GITHUB_TOKEN=default
+node_js: 8
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
