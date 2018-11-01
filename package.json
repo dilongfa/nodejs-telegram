@@ -11,9 +11,7 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/github"
-    ],
-    "dryRun": true,
-    "ci": false
+    ]
   },
   "repository": {
     "type": "git",
