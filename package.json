@@ -1,38 +1,37 @@
 {
   "name": "nodejs-telegram",
-  "version": "1.0.0",
-  "description": "Telegram Cli in Nodejs",
-  "keywords": [
-    "telegram",
-    "telegram-api",
-    "telegram-cli",
-    "telegram-bot",
-    "telegram-mtproto",
-    "node-telegram",
-    "nodejs-telegram"
-  ],
-  "author": "DiLong Fa <dilongfa@gmail.com>",
+  "version": "1.1.4",
+  "description": "NodeJS client for the Telegram's tdlib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dilongfa/nodejs-telegram.git"
+    "url": "git+https://github.com/dilongfa/nodejs-telegram.git"
   },
+  "keywords": [
+    "tlg",
+    "node-tlg",
+    "tdl",
+    "telegram",
+    "tdlib",
+    "libtdjson",
+    "nodejs",
+    "node-tdlib",
+    "node-telegram",
+    "telegram-client",
+    "telegram-bot",
+    "telegram-api",
+    "telegram-cli"
+  ],
+  "author": "DiLong Fa <dilongfa@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dilongfa/nodejs-telegram/issues"
   },
-  "license": "MIT",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
-    ]
-  },
+  "homepage": "https://github.com/dilongfa/nodejs-telegram#readme",
   "dependencies": {
-    "debug": "^3.1.0"
-  },
-  "devDependencies": {}
+    "ffi-napi": "2.4.4"
+  }
 }

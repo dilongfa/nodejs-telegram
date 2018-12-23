@@ -1,7 +1,69 @@
-# nodejs-telegram
-[![Build Status](https://travis-ci.com/dilongfa/nodejs-telegram.svg?branch=master)](https://travis-ci.com/dilongfa/nodejs-telegram)
+## nodejs-telegram
 
-A simple NodeJs package for the [`telegram-cli`](https://valtman.name/telegram-cli)
-Send and receive a text message over TCP
+NodeJS API for the [TDLib](https://core.telegram.org/tdlib/getting-started). 
+It helps you build your own Telegram Client. 
+Full support Secret Chat feature.
 
-See [wiki](https://github.com/dilongfa/nodejs-telegram/wiki) for documentation.
+---
+
+### Installation
+
+1. Build the binary (https://github.com/tdlib/td#building)
+2. `npm i tlg`
+
+---
+
+### Usage
+
+```js
+const { Client } = require('tlg')
+
+main()
+
+async function main() {
+	const client = new Client({
+		apiId: 999999, 
+		apiHash: '7cb3e46a69d2e69753744e216eb4e613'
+	})
+
+	try {
+		await client.connect('user', 'YOUR_PHONE_NUMBER')
+
+		await client.getChats()
+		await client.createPrivateChat('USER_ID')
+		await client.sendMessage('USER_ID', 'Hello my friend!')
+		
+		client.on('__updateMessageSendSucceeded', client.close)
+
+	} catch(e) {
+		console.error('ERROR', e)
+	}
+}
+```
+---
+### Examples
+See [examples/](examples) folder.
+
+---
+
+### Requirements
+
+- TDLib binary (`libtdjson.so` on Linux, `libtdjson.dylib` on macOS, `tdjson.dll` on Windows)
+- NodeJs version >= 10.0.0
+---
+
+### Building for Linux Debian 9.5
+```sh
+apt-get update
+apt-get install cmake gperf ccache libssl-dev zlib1g-dev libreadline-dev clang ninja-build
+
+git clone https://github.com/tdlib/td.git
+cd td  
+mkdir build
+cd build
+
+CXX=clang++ CC=clang cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
+ninja
+
+cp libtdjson.so /path/to/your-app-folder
+```

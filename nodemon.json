@@ -1,6 +1,0 @@
-{
-    "ignore": ["package.json", "package-lock.json"],
-    "verbose": false,
-    "watch": ["lib", "index.js"],
-    "ext": "js"
-}
